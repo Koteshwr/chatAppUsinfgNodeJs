@@ -1,5 +1,5 @@
 {
-  "name": "vercel",
+  "name": "myapp",
   "version": "1.0.0",
   "description": "this is my first app to chat ",
   "main": "index.js",
