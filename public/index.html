@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Chat Application</title>
+</head>
+<body>
+    
+    <div class="msgArea">
+        <div class="joinmsg"></div>
+        <div class="outgoing">
+            Hii snt
+        </div>
+        <div class="incoming">
+            Hii receivd
+        </div>   
+    </div>
+    <div class="textmsg">
+       
+        <textarea name="textarea" id="textmsg" cols="30" rows="1" placeholder="write your message..."></textarea>
+       <button class="sendmsg" id="sendmsg">send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
