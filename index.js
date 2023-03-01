@@ -2,10 +2,10 @@ const express = require("express")
 const { setUncaughtExceptionCaptureCallback } = require("process")
 const app = express()
 const http = require("http").createServer(app)
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 80
 
 app.use(express.static(__dirname+"/public"))
-http.listen(port,()=>{
+http.listen(port,"0.0.0.0",()=>{
     console.log(`listening on port ${port}`)
 })
 
